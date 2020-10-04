@@ -1,3 +1,4 @@
+# https://www.hackerrank.com/challenges/picking-numbers/problem
 from collections import Counter
 def pickingNumbers(a):
     arr = Counter(a)
