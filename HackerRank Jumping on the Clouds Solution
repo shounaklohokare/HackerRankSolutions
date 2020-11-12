@@ -1,0 +1,22 @@
+# Complete the jumpingOnClouds function below.
+def jumpingOnClouds(c):
+    
+    i=0 ; ans=[]
+    while i<len(c):
+        if i+1>len(c) or i+2>len(c):
+            break
+        
+        if i+2 < len(c):
+            if c[i+2]!=1:
+                i+=2
+                ans.append(i+2)
+                continue    
+            
+            
+        if i+1<len(c):
+            if c[i+1]!=1:
+                i+=1
+                ans.append(i)
+                
+    return len(ans)
+                
